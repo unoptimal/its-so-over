@@ -5,10 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="IT'S SO OVER">
-<meta http-equiv="refresh" content="2;url=https://unoptimal.github.io/were-so-back">
+<meta http-equiv="refresh" content="1;url=https://unoptimal.github.io/were-so-back">
+
 <title>IT'S SO OVER</title>
 <style>
-       html, body {
+    html, body {
         margin: 0;
         padding: 0;
         height: 100%;
@@ -16,37 +17,66 @@
         color: white;
         background: black;
     }
-    body {
+    #wrapper {
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+    .credit, .credit2 {
+        position: fixed;
+        bottom: 10px;
+        font-size: 2vh;
     }
     .credit {
-        position: fixed;
-        bottom: 10px;
         left: 10px;
-        font-size: 15px;
     }
     .credit2 {
-        position: fixed;
-        bottom: 10px;
         right: 10px;
-        font-size: 15px;
     }
     h1{
-        font-size: 50px;
+        font-size: 25vh;
     }
     a{
         text-decoration: none;
         color: white;
     }
+
+    @media (max-width: 1025px) {
+        h1 {
+            font-size: 15vh;
+        }
+        .credit, .credit2 {
+            font-size: 1.5vh;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 8vh;
+        }
+        .credit, .credit2 {
+            font-size: 1.5vh;
+        }
+    }
+    @media (max-width: 426px) {
+        h1 {
+            font-size: 5vh;
+        }
+        .credit, .credit2 {
+            font-size: 1.5vh;
+        }
+    }
 </style>
 </head>
 
 <body>
-<h1>IT'S SO OVER</h1>
-<div class="credit">by <a href="https://unoptimal.com/" target="_blank">unoptimal</a></div>
-<div class="credit2">inspiration: <a href="https://heeeeeeeey.com/" target="_blank">HEEEEEEEEEY!</a></div>
+<div id="wrapper">
+    <h1>IT'S SO OVER</h1>
+    <div class="credit">by <a href="https://unoptimal.com/" target="_blank">unoptimal</a></div>
+    <div class="credit2">inspiration: <a href="https://heeeeeeeey.com/" target="_blank">HEEEEEEEEEY!</a></div>
+</div>
 
 </body>
 
